@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - MyResume Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File <link href="assets/css/main.css" rel="stylesheet">-->
+  
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Accueil</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>À propos</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Expériences </span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Projets </span></a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Compétences </span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact </span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+<section id="hero" class="hero section light-background">
+  <!-- Image de fond subtile -->
+  <img src="assets/img/ero.jpeg" alt="Photo de Emmanuel Iskil J. Lantonkpode" class="hero-img">
+
+  <div class="container" data-aos="zoom-out">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 text-center">
+        <!-- Nom -->
+        <h1>Emmanuel Iskil J. LANTONKPODE</h1>
+
+        <!-- Texte qui s'écrit -->
+        <p class="hero-intro" id="typing-text"></p>
+
+        <!-- Icônes sociales -->
+        <div class="social-links mt-3">
+          <a href="https://www.facebook.com/share/1BvoPtaACF/?mibextid=wwXIfr" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="http://linkedin.com/in/iskil-l-50119522a" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Typing Effect JS -->
+<script>
+const text = "Je suis un ingénieur spécialisé en géotechnique et gestion de projets de construction, passionné par la réalisation de chantiers complexes et durables.";
+const typingSpeed = 40; // vitesse en ms
+let index = 0;
+
+function typeWriter() {
+  if (index < text.length) {
+    document.getElementById("typing-text").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, typingSpeed);
+  }
+}
+
+// Lancer le “typing” quand la page est chargée
+window.addEventListener("load", typeWriter);
+</script>
+
+<!-- CSS Hero -->
+<style>
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.hero-intro {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #333;
+  min-height: 80px; /* évite le “saut” pendant le typing */
+  z-index: 2;
+}
+
+.social-links {
+  z-index: 2;
+}
+
+.social-links a {
+  font-size: 1.4rem;
+  margin: 0 10px;
+  color: #007BFF;
+  text-decoration: none; /* supprime le soulignement */
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #0056b3;
+}
+
+.hero-contact {
+  z-index: 2;
+}
+
+.hero-contact .btn {
+  margin: 0 10px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  border: none;
+  color: white;
+}
+
+.btn-outline-primary {
+  border: 2px solid #007BFF;
+  color: #007BFF;
+  background: transparent;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007BFF;
+  color: white;
+}
+</style>
+
+<!-- About Section -->
+<section id="about" class="about section py-5">
+
+  <div class="container" data-aos="fade-up">
+
+    <!-- Titre centré en haut -->
+  <div class="container section-title text-center" data-aos="fade-up">
+      <h2 style="color:#007BFF; font-size:2.5rem; font-weight:700; 
+                 display:inline-block; border-bottom:3px solid #007BFF; padding-bottom:5px;">
+        À propos
+      </h2>
+    </div>
+
+    <!-- Ligne Image + Texte -->
+    <div class="row align-items-start gy-4">
+      
+      <!-- Colonne 1 : Image + Bouton -->
+      <div class="col-md-4 text-center">
+        <img src="assets/img/profile.jpeg" 
+             class="img-fluid rounded shadow mb-3" 
+             alt="Emmanuel Iskil J. LANTONKPODE">
+
+        <a href="assets/cv/Emmanuel_LANTONKPODE_CV.pdf" 
+           class="btn btn-primary px-4 py-2 shadow"
+           download>
+          <i class="bi bi-download"></i> Télécharger le CV
+        </a>
+      </div>
+      
+      <!-- Colonne 2 : Texte -->
+      <div class="col-md-8">
+
+        <p style="font-size:1.2rem; line-height:1.6;">
+          Chargé d’affaires en génie civil et géotechnique, Emmanuel LANTONKPODE combine expertise technique, gestion financière et pilotage opérationnel de projets complexes.
+        </p>
+
+        <p style="font-size:1.2rem; line-height:1.6; margin-top:15px;">
+          Formé en France et au Bénin, il intervient sur des opérations allant de plusieurs milliers à plusieurs millions d’euros, couvrant les missions géotechniques G1 à G5, les études de dimensionnement, les études de prix et le suivi d’exécution.
+        </p>
+
+        <p style="font-size:1.2rem; line-height:1.6; margin-top:15px;">
+          Son double profil technique et terrain lui permet d’assurer la coordination entre bureaux d’études, entreprises et maîtres d’ouvrage, tout en garantissant performance, sécurité et rentabilité.
+        </p>
+
+        <p style="font-size:1.2rem; line-height:1.6; margin-top:15px;">
+          Rigoureux, adaptable et orienté solutions, il s’investit pleinement dans chaque projet avec une exigence constante de qualité et d’efficacité.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- Resume Section -->
+<section id="resume" class="resume section">
+
+  <!-- Section Title -->
+  <div class="container section-title text-center" data-aos="fade-up">
+    <h2 style="color:#007BFF; font-weight:700;">Expériences Professionnelles</h2>
+    <p style="max-width:700px; margin:0 auto;">
+      Parcours en géotechnique, conduite de travaux et gestion d’affaires sur des projets complexes en France et au Bénin.
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <!-- COLONNE GAUCHE -->
+      <div class="col-lg-6" data-aos="fade-up">
+
+        <div class="resume-item mb-4">
+          <h4 style="color:#007BFF; font-weight:600;">Chargé d’Affaires – CDI</h4>
+          <p style="color:#007BFF;"><strong>Saga Ingénierie</strong> | Grigny, France</p>
+          <p class="text-muted fst-italic">Septembre 2025 – Aujourd’hui</p>
+          <ul>
+            <li>Missions géotechniques G1 à G5.</li>
+            <li>Programmation et suivi de chantiers.</li>
+            <li>Rédaction de rapports techniques.</li>
+            <li>Gestion commerciale et financière des affaires.</li>
+            <li>Pilotage de projets géotechniques complexes.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item mb-4">
+          <h4 style="color:#007BFF; font-weight:600;">Ingénieur d’Affaires Soutènement</h4>
+          <p style="color:#007BFF;"><strong>Franki Fondation</strong> | Grigny, France</p>
+          <p class="text-muted fst-italic">Septembre 2024 – Septembre 2025</p>
+          <ul>
+            <li>Missions géotechniques G2 et G3.</li>
+            <li>Analyse des rapports AVP et PRO.</li>
+            <li>Pré-études de soutènements et fondations profondes.</li>
+            <li>Métrés et chiffrage des projets.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item mb-4">
+          <h4 style="color:#007BFF; font-weight:600;">Géotechnicien</h4>
+          <p style="color:#007BFF;"><strong>WSP</strong> | Lyon, France</p>
+          <p class="text-muted fst-italic">Avril 2024 – Août 2024</p>
+          <ul>
+            <li>Missions G2 DCE/ACT, G3 et G4.</li>
+            <li>Rédaction des pièces DCE et analyse des offres.</li>
+            <li>Suivi géotechnique et validation d’exécution.</li>
+            <li>Interventions sur travaux SSP, digues et assainissement.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item mb-4">
+          <h4 style="color:#007BFF; font-weight:600;">Ingénieur d’Affaires BTP</h4>
+          <p style="color:#007BFF;"><strong>LDC Batis</strong> | Bénin</p>
+          <p class="text-muted fst-italic">Janvier 2023 – Septembre 2023</p>
+          <ul>
+            <li>Analyse des DCE et élaboration des offres financières.</li>
+            <li>Études de prix en bâtiment et VRD.</li>
+            <li>Conduite de chantier et coordination technique.</li>
+            <li>Encadrement de 30 à 40 collaborateurs.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- COLONNE DROITE -->
+      <div class="col-lg-6" data-aos="fade-up">
+
+        <div class="resume-item mb-4">
+          <h4 style="color:#007BFF; font-weight:600;">Contrôleur Qualité</h4>
+          <p style="color:#007BFF;"><strong>PNHG Filiale Bénin</strong></p>
+          <p class="text-muted fst-italic">Août 2022 – Janvier 2023</p>
+          <ul>
+            <li>Mise en place du plan de contrôle qualité.</li>
+            <li>Application des procédures ISO.</li>
+            <li>Contrôle qualité du gros œuvre et des finitions.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item mb-4">
+          <h4 style="color:#007BFF; font-weight:600;">Conducteur de Travaux</h4>
+          <p style="color:#007BFF;"><strong>SCTP</strong> | Bénin</p>
+          <p class="text-muted fst-italic">Octobre 2021 – Mai 2022</p>
+          <ul>
+            <li>Encadrement de 15 à 25 collaborateurs.</li>
+            <li>Planification TCE et coordination des intervenants.</li>
+            <li>Gestion des achats et approvisionnements.</li>
+            <li>Suivi technique et reporting auprès de la maîtrise d’ouvrage.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item mb-4">
+          <h4 style="color:#007BFF; font-weight:600;">Assistant Conducteur de Travaux</h4>
+          <p style="color:#007BFF;"><strong>Colas Afrique</strong> | Cotonou, Bénin</p>
+          <p class="text-muted fst-italic">Avril 2021 – Octobre 2021</p>
+          <ul>
+            <li>Terrassement sur projet de 20 000 logements (125 à 235 ha).</li>
+            <li>Gestion du planning et du matériel.</li>
+            <li>Contrôle des côtes finies.</li>
+            <li>Supervision de la préfabrication pour l’assainissement.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h4 style="color:#007BFF; font-weight:600;">Chef de Chantier</h4>
+          <p style="color:#007BFF;"><strong>Armature</strong> | Abomey-Calavi, Bénin</p>
+          <p class="text-muted fst-italic">Novembre 2020 – Mars 2021</p>
+          <ul>
+            <li>Pilotage des travaux selon le planning établi.</li>
+            <li>Supervision du gros œuvre et du second œuvre.</li>
+            <li>Interface technique entre direction et équipes terrain.</li>
+            <li>Participation à la gestion des approvisionnements.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FORMATION -->
+    <div class="row mt-5 text-center" data-aos="fade-up">
+      <div class="col-12">
+        <h4 style="color:#007BFF; font-weight:700;">Formation</h4>
+      </div>
+
+      <div class="col-md-4 mt-3">
+        <strong>Diplôme d’Ingénieur en Géotechnique</strong><br>
+        <span class="text-muted">Polytech Grenoble – Juin 2023</span>
+      </div>
+
+      <div class="col-md-4 mt-3">
+        <strong>Diplôme d’Ingénieur en Construction BTP</strong><br>
+        <span class="text-muted">EPAC – Septembre 2017 à Juin 2022</span>
+      </div>
+
+      <div class="col-md-4 mt-3">
+        <strong>Baccalauréat Scientifique</strong><br>
+        <span class="text-muted">Sainte Bakhita – Juin 2016</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+    <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio section py-5">
+
+  <!-- Titre Section -->
+  <div class="container section-title text-center mb-5" data-aos="fade-up">
+    <h2 style="color:#007BFF; font-weight:700; border-bottom:3px solid #007BFF; display:inline-block; padding-bottom:5px;">
+      Projets
+    </h2>
+    <p>Réalisations en génie civil et géotechnique</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Projet 1 -->
+      <div class="col-lg-6 col-md-6">
+        <div class="card shadow border-0 h-100">
+          <img src="assets/img/1.jpeg" class="img-fluid" alt="Fondations profondes">
+          <div class="card-body">
+            <h5 class="card-title">Fondations profondes – Mission G2/G3</h5>
+            <p class="card-text">
+              Dimensionnement de pieux, vérifications ELU/ELS selon Eurocode 7,
+              modélisation avec Plaxis et K-Réa.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 2 -->
+      <div class="col-lg-6 col-md-6">
+        <div class="card shadow border-0 h-100">
+          <img src="assets/img/2.jpeg" class="img-fluid" alt="Ouvrage de soutènement">
+          <div class="card-body">
+            <h5 class="card-title">Ouvrage de Soutènement</h5>
+            <p class="card-text">
+              Études de stabilité globale et locale, calculs Talren,
+              suivi technique et coordination d’exécution.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 3 -->
+      <div class="col-lg-6 col-md-6">
+        <div class="card shadow border-0 h-100">
+          <img src="assets/img/3.jpeg" class="img-fluid" alt="Projet VRD et infrastructure">
+          <div class="card-body">
+            <h5 class="card-title">Projet VRD & Infrastructure</h5>
+            <p class="card-text">
+              Études techniques, gestion financière et pilotage
+              d’un projet d’infrastructure routière.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 4 - Vidéo PNHG -->
+      <div class="col-lg-6 col-md-6">
+        <div class="card shadow border-0 h-100">
+          <div class="ratio ratio-16x9">
+            <iframe 
+              src="https://www.youtube.com/embed/Fr5x6TGb_OA"
+              title="Projet PNHG - Présentation Chantier"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Projet PNHG – Coordination & Pilotage</h5>
+            <p class="card-text">
+              Supervision opérationnelle, planification et gestion technique
+              d’un chantier en génie civil.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+    <!-- Services Section -->
+  <section id="services" class="services section py-5">
+
+  <!-- Section Title -->
+  <div class="container section-title text-center mb-5" data-aos="fade-up">
+    <h2 style="color:#007BFF; font-weight:700; border-bottom:3px solid #007BFF; display:inline-block; padding-bottom:5px;">
+      Compétences
+    </h2>
+    <p>Expertise technique et gestion de projets en génie civil et géotechnique</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Géotechnique -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-item shadow-sm p-4 h-100">
+          <i class="bi bi-diagram-3 fs-2 text-primary"></i>
+          <h4 class="mt-3">Géotechnique</h4>
+          <p>
+            Missions G1 à G5, études techniques et financières,
+            dimensionnement de pieux, micropieux, fondations superficielles,
+            ouvrages de soutènement et analyses de stabilité.
+          </p>
+        </div>
+      </div>
+
+      <!-- Génie Civil -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-item shadow-sm p-4 h-100">
+          <i class="bi bi-building fs-2 text-primary"></i>
+          <h4 class="mt-3">Génie Civil & VRD</h4>
+          <p>
+            Études de prix, métrés, planification,
+            conduite de travaux bâtiments et infrastructures VRD,
+            coordination TCE et suivi d’exécution.
+          </p>
+        </div>
+      </div>
+
+      <!-- Gestion -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-item shadow-sm p-4 h-100">
+          <i class="bi bi-briefcase fs-2 text-primary"></i>
+          <h4 class="mt-3">Gestion d’Affaires & Chantier</h4>
+          <p>
+            Gestion financière des missions, pilotage opérationnel,
+            encadrement d’équipes (jusqu’à 40 collaborateurs),
+            relation clients et coordination technique.
+          </p>
+        </div>
+      </div>
+
+      <!-- Normes -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-item shadow-sm p-4 h-100">
+          <i class="bi bi-check2-square fs-2 text-primary"></i>
+          <h4 class="mt-3">Normes & Réglementation</h4>
+          <p>
+            Maîtrise des Eurocodes 2, 3 et 7,
+            normes françaises (NF P 94),
+            vérifications ELU/ELS et conformité réglementaire.
+          </p>
+        </div>
+      </div>
+
+      <!-- Logiciels -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-item shadow-sm p-4 h-100">
+          <i class="bi bi-laptop fs-2 text-primary"></i>
+          <h4 class="mt-3">Logiciels Métiers</h4>
+          <p>
+            K-Réa, Plaxis, Talren, Foxta, Géolog (bonne maîtrise) <br>
+            AutoCAD, Robot SA, Revit, Excel (bonne maîtrise)
+          </p>
+        </div>
+      </div>
+
+      <!-- Outils complémentaires -->
+      <div class="col-lg-4 col-md-6">
+        <div class="service-item shadow-sm p-4 h-100">
+          <i class="bi bi-code-slash fs-2 text-primary"></i>
+          <h4 class="mt-3">Outils & Programmation</h4>
+          <p>
+            Python (automatisation et calculs),
+            Covadis (maîtrise partielle),
+            optimisation des processus d’étude.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+    
+   <!-- Section Contact -->
+<section id="contact" class="contact section">
+
+  <!-- Titre de section -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>N'hésitez pas à me contacter pour toute collaboration ou projet professionnel.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <!-- Informations de contact -->
+      <div class="col-lg-4">
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Adresse</h3>
+            <p>Nationale France</p>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Téléphone</h3>
+            <p>07 44 19 83 15</p>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Email</h3>
+            <p>jieltk@gmail.com</p>
+          </div>
+        </div><!-- End Info Item -->
+
+      </div>
+
+      <!-- Formulaire de contact -->
+      <div class="col-lg-8">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Votre nom" required="">
+            </div>
+
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" placeholder="Votre email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Objet" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Votre message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Envoi...</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Votre message a été envoyé. Merci !</div>
+
+              <button type="submit">Envoyer le message</button>
+            </div>
+
+          </div>
+        </form>
+      </div><!-- End Contact Form -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background py-4">
+    <div class="container text-center">
+  
+      <!-- Nom -->
+      <h3 style="color:#007BFF; margin-bottom:10px;">Emmanuel Iskil J. LANTONKPODE</h3>
+  
+      <!-- Phrase d'accroche -->
+      <p style="margin-bottom:15px; color:#555;">
+        Ingénieur spécialisé en géotechnique et gestion de projets de construction. Passionné par la réalisation de chantiers complexes et durables.
+      </p>
+  
+      <!-- Icônes sociales -->
+      <!-- <div class="social-links d-flex justify-content-center mb-3">
+        <a href="https://www.facebook.com/share/1BvoPtaACF/?mibextid=wwXIfr" title="Facebook" style="color:#1877F2; font-size:1.5rem; margin:0 10px;"><i class="bi bi-facebook"></i></a>
+        <a href="http://linkedin.com/in/iskil-l-50119522a" title="LinkedIn" style="color:#0A66C2; font-size:1.5rem; margin:0 10px;"><i class="bi bi-linkedin"></i></a>
+      </div> -->
+  
+      <!-- Copyright -->
+      <div class="copyright" style="color:#888;">
+        &copy; 2026 Emmanuel Iskil J. LANTONKPODE. Tous droits réservés.
+      </div>
+  
+    </div>
+  </footer>
+  
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script>
+    setTimeout(function() {
+      var loader = document.getElementById("preloader");
+      if(loader){
+        loader.style.opacity = "0";
+        setTimeout(function(){
+          loader.style.display = "none";
+        }, 600); // correspond à la transition CSS
+      }
+      document.body.classList.add("loaded");
+    }, 3000); // 3 secondes max avant de cacher le preloader
+    </script>
+    
+    
+    
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+<style>
+  .hero {
+  position: relative;
+  min-height: 80vh; /* réduit la hauteur pour moins d'espace vide */
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 30px 0; /* réduit l'espace vertical */
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #007BFF; /* Nom en bleu */
+  margin-bottom: 15px; /* réduit l'espace sous le nom */
+  z-index: 2;
+}
+
+.hero-intro {
+  font-size: 1.1rem;
+  margin-top: 5px;
+  color: #333;
+  min-height: 60px; /* réduit espace du typing */
+  z-index: 2;
+}
+
+.social-links {
+  z-index: 2;
+  margin-top: 10px; /* moins d'espace */
+}
+
+.social-links a {
+  font-size: 1.6rem;
+  margin: 0 8px; /* espace réduit entre icônes */
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+/* Couleurs officielles des icônes */
+.social-links a[title="Facebook"] i {
+  color: #1877F2;
+}
+
+.social-links a[title="LinkedIn"] i {
+  color: #0A66C2;
+}
+
+  :root {
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #45505b; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #0563bb; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #45505b;  /* The default color of the main navmenu links */
+  --nav-hover-color: #0563bb; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #0563bb; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #f9f9f9;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #060606;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #252525;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General Styling & Shared Classes
+--------------------------------------------------------------*/
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+body.loaded #preloader {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+/* PHP Email Form Messages
+------------------------------*/
+.php-email-form .error-message {
+  display: none;
+  background: #df1529;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #ffffff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .loading {
+  display: none;
+  background: var(--surface-color);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--accent-color);
+  border-top-color: var(--surface-color);
+  animation: php-email-form-loading 1s linear infinite;
+}
+
+@keyframes php-email-form-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Header
+--------------------------------------------------------------*/
+.header {
+  color: var(--default-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 15px;
+  transition: all ease-in-out 0.3s;
+  overflow-y: auto;
+  z-index: 997;
+  min-width: 200px;
+}
+
+@media (max-width: 1199px) {
+  .header {
+    background-color: var(--background-color);
+    border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    width: 300px;
+    left: -100%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .header~main {
+    margin-left: 160px;
+  }
+
+  .header~main .hero {
+    margin-left: -160px;
+    width: 100vw;
+  }
+}
+
+.header.header-show {
+  left: 0;
+}
+
+.header .header-toggle {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 9999;
+  transition: background-color 0.3s;
+}
+
+.header .header-toggle:hover {
+  color: var(--contrast-color);
+  background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+.navmenu {
+  padding: 0;
+  z-index: 9997;
+}
+
+.navmenu ul {
+  list-style: none;
+  padding: 0 0 20px 0;
+  margin: 0;
+  width: 140px;
+}
+
+.navmenu a,
+.navmenu a:focus {
+  color: var(--nav-color);
+  font-family: var(--nav-font);
+  display: flex;
+  align-items: center;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  border-radius: 50px;
+  background: color-mix(in srgb, var(--default-color), transparent 92%);
+  height: 56px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.navmenu a i,
+.navmenu a:focus i {
+  font-size: 20px;
+}
+
+.navmenu a span,
+.navmenu a:focus span {
+  padding: 0 5px 0 7px;
+}
+
+@media (min-width: 992px) {
+
+  .navmenu a,
+  .navmenu a:focus {
+    max-width: 56px;
+  }
+
+  .navmenu a span,
+  .navmenu a:focus span {
+    display: none;
+  }
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus,
+.navmenu li:hover>a {
+  color: var(--contrast-color);
+  background: var(--nav-hover-color);
+}
+
+.navmenu a:hover,
+.navmenu li:hover>a {
+  max-width: 100%;
+  color: var(--contrast-color);
+}
+
+.navmenu a:hover span,
+.navmenu li:hover>a span {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.footer .social-links {
+  margin: 0 0 30px 0;
+}
+
+.footer .social-links a {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  line-height: 1;
+  margin: 0 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  text-decoration: none;
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .credits {
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: var(--background-color);
+  transition: all 0.6s ease-out;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #ffffff;
+  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: var(--contrast-color);
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
+.page-title {
+  --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 20px 0;
+  position: relative;
+}
+
+.page-title h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.page-title .breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-title .breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.page-title .breadcrumbs ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  overflow: clip;
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: color-mix(in srgb, var(--default-color), transparent 60%);
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.hero p {
+  margin: 5px 0 0 0;
+  font-size: 26px;
+}
+
+.hero p span {
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.hero .social-links {
+  margin-top: 25px;
+}
+
+.hero .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.hero .social-links a:hover {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .content h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--accent-color);
+  line-height: 0;
+}
+
+/*--------------------------------------------------------------
+# Stats Section
+--------------------------------------------------------------*/
+.stats i {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  width: 54px;
+  height: 54px;
+  font-size: 24px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.stats .stats-item {
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+.stats .stats-item span {
+  font-size: 36px;
+  display: block;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.stats .stats-item p {
+  padding: 0;
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 16px;
+}
+
+/*--------------------------------------------------------------
+# Skills Section
+--------------------------------------------------------------*/
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  color: var(--heading-color);
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  height: 10px;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Resume Section
+--------------------------------------------------------------*/
+.resume .resume-title {
+  color: var(--heading-color);
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--accent-color);
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: var(--background-color);
+  border: 2px solid var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.portfolio .portfolio-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio .portfolio-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 20px 10px 20px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 5px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  font-family: var(--heading-font);
+}
+
+.portfolio .portfolio-filters li:hover,
+.portfolio .portfolio-filters li.filter-active {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio .portfolio-filters li:first-child {
+  margin-left: 0;
+}
+
+.portfolio .portfolio-filters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .portfolio .portfolio-filters li {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+}
+
+.portfolio .portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -100%;
+  z-index: 3;
+  transition: all ease-in-out 0.5s;
+  background: color-mix(in srgb, var(--background-color), transparent 10%);
+  padding: 15px;
+}
+
+.portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 50px;
+}
+
+.portfolio .portfolio-item .portfolio-info p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-right: 50px;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
+  position: absolute;
+  right: 50px;
+  font-size: 24px;
+  top: calc(50% - 14px);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  transition: 0.3s;
+  line-height: 0;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
+  color: var(--accent-color);
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link {
+  right: 14px;
+  font-size: 28px;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services .service-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 60px 30px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.services .service-item .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.services .service-item .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.services .service-item .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.services .service-item .icon svg path {
+  transition: 0.5s;
+  fill: color-mix(in srgb, var(--default-color), transparent 95%);
+}
+
+.services .service-item h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item:hover {
+  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+.services .service-item.item-cyan i {
+  color: #0dcaf0;
+}
+
+.services .service-item.item-cyan:hover .icon i {
+  color: #fff;
+}
+
+.services .service-item.item-cyan:hover .icon path {
+  fill: #0dcaf0;
+}
+
+.services .service-item.item-orange i {
+  color: #fd7e14;
+}
+
+.services .service-item.item-orange:hover .icon i {
+  color: #fff;
+}
+
+.services .service-item.item-orange:hover .icon path {
+  fill: #fd7e14;
+}
+
+.services .service-item.item-teal i {
+  color: #20c997;
+}
+
+.services .service-item.item-teal:hover .icon i {
+  color: #fff;
+}
+
+.services .service-item.item-teal:hover .icon path {
+  fill: #20c997;
+}
+
+.services .service-item.item-red i {
+  color: #df1529;
+}
+
+.services .service-item.item-red:hover .icon i {
+  color: #fff;
+}
+
+.services .service-item.item-red:hover .icon path {
+  fill: #df1529;
+}
+
+.services .service-item.item-indigo i {
+  color: #6610f2;
+}
+
+.services .service-item.item-indigo:hover .icon i {
+  color: #fff;
+}
+
+.services .service-item.item-indigo:hover .icon path {
+  fill: #6610f2;
+}
+
+.services .service-item.item-pink i {
+  color: #f3268c;
+}
+
+.services .service-item.item-pink:hover .icon i {
+  color: #fff;
+}
+
+.services .service-item.item-pink:hover .icon path {
+  fill: #f3268c;
+}
+
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+  overflow: hidden;
+}
+
+.testimonials .testimonial-item .testimonial-content {
+  border-left: 3px solid var(--accent-color);
+  padding-left: 30px;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  border-radius: 50%;
+  border: 4px solid var(--background-color);
+  margin: 0 auto;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin: 0 0 10px 0;
+}
+
+.testimonials .testimonial-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+}
+
+.testimonials .swiper-wrapper {
+  height: auto;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  opacity: 1;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-item+.info-item {
+  margin-top: 40px;
+}
+
+.contact .info-item i {
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.contact .info-item h3 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.contact .info-item:hover i {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.contact .php-email-form {
+  height: 100%;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact .php-email-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details Section
+--------------------------------------------------------------*/
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .swiper-wrapper {
+  height: auto;
+}
+
+.portfolio-details .swiper-button-prev,
+.portfolio-details .swiper-button-next {
+  width: 48px;
+  height: 48px;
+}
+
+.portfolio-details .swiper-button-prev:after,
+.portfolio-details .swiper-button-next:after {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.15);
+  font-size: 24px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.portfolio-details .swiper-button-prev:hover:after,
+.portfolio-details .swiper-button-next:hover:after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 575px) {
+
+  .portfolio-details .swiper-button-prev,
+  .portfolio-details .swiper-button-next {
+    display: none;
+  }
+}
+
+.portfolio-details .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  opacity: 1;
+}
+
+.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-info h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  bottom: 0;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.portfolio-details .portfolio-info ul strong {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 14px;
+}
+
+.portfolio-details .portfolio-info .btn-visit {
+  padding: 8px 40px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.portfolio-details .portfolio-info .btn-visit:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
+.portfolio-details .portfolio-description .testimonial-item {
+  padding: 30px 30px 0 30px;
+  position: relative;
+  background: color-mix(in srgb, var(--default-color), transparent 97%);
+  margin-bottom: 50px;
+}
+
+.portfolio-details .portfolio-description .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50px;
+  border: 6px solid var(--background-color);
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.portfolio-details .portfolio-description .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0 5px 0;
+  padding-top: 20px;
+}
+
+.portfolio-details .portfolio-description .testimonial-item h4 {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+}
+
+.portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
+.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.portfolio-details .portfolio-description .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.portfolio-details .portfolio-description .testimonial-item p {
+  font-style: italic;
+  margin: 0 0 15px 0 0 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Service Details Section
+--------------------------------------------------------------*/
+.service-details .service-box {
+  padding: 20px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-details .service-box+.service-box {
+  margin-top: 30px;
+}
+
+.service-details .service-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.service-details .services-list a {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  background-color: color-mix(in srgb, var(--default-color), transparent 96%);
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.service-details .services-list a:first-child {
+  margin-top: 0;
+}
+
+.service-details .services-list a i {
+  font-size: 16px;
+  margin-right: 8px;
+  color: var(--accent-color);
+}
+
+.service-details .services-list a.active {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+}
+
+.service-details .services-list a.active i {
+  color: var(--contrast-color);
+}
+
+.service-details .services-list a:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  color: var(--accent-color);
+}
+
+.service-details .download-catalog a {
+  color: var(--default-color);
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  transition: 0.3s;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.service-details .download-catalog a:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.service-details .download-catalog a:last-child {
+  padding-bottom: 0;
+}
+
+.service-details .download-catalog a i {
+  font-size: 24px;
+  margin-right: 8px;
+  color: var(--accent-color);
+}
+
+.service-details .download-catalog a:hover {
+  color: var(--accent-color);
+}
+
+.service-details .help-box {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  margin-top: 30px;
+  padding: 30px 15px;
+}
+
+.service-details .help-box .help-icon {
+  font-size: 48px;
+}
+
+.service-details .help-box h4,
+.service-details .help-box a {
+  color: var(--contrast-color);
+}
+
+.service-details .services-img {
+  margin-bottom: 20px;
+}
+
+.service-details h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.service-details p {
+  font-size: 15px;
+}
+
+.service-details ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.service-details ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.service-details ul i {
+  font-size: 20px;
+  margin-right: 8px;
+  color: var(--accent-color);
+}
+</style>
+
+
+
+
+  
+</body>
+
+</html>
+
